@@ -52,7 +52,7 @@
 			FlyVK.settings.aia("scripts",name);
 			FlyVK.settings.aia("scripts_list",name);
 			n.nextSibling.insertAdjacentHTML('afterBegin',`<div id='sc_${name}' style='margin:2px 0px;' class="checkbox on" onclick="checkbox(this); FlyVK.settings[isChecked(this)?'aia':'air']('scripts_list','${name}');">${FlyVK.gs('settings_script_'+name)}</div>`);
-			FlyVK.other.addScript("//cdn.jsdelivr.net/gh/xor2003/flyvk/master/libs/"+name+".js");
+			FlyVK.other.addScript("//cdn.jsdelivr.net/gh/xor2003/flyvk/libs/"+name+".js");
 			n.value = "";
 		},
 
@@ -338,7 +338,7 @@
 	onready:function(id){
 		FlyVK.r = FlyVK.version;
 		if(FlyVK.settings.get("disable_cache",0))FlyVK.r = Math.random();
-		FlyVK.other.addScript("//cdn.jsdelivr.net/gh/xor2003/flyvk/master/lang/"+FlyVK.lang_id+".js?r="+FlyVK.r);
+		FlyVK.other.addScript("//cdn.jsdelivr.net/gh/xor2003/flyvk/lang/"+FlyVK.lang_id+".js?r="+FlyVK.r);
 	},
 	timer:{
 		timer:setInterval(function(a){
