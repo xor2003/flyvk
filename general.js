@@ -1,6 +1,5 @@
-﻿alert("general loaded");
-var FlyVK = {
-	version:1.91,//Версия
+﻿var FlyVK = {
+	version:1.92,//Версия
 	tmp:{},//Для хранения временных переменных
 	libs:{},//Для хранения переменных загруженных скриптами
 	addFunctionListener:function(obj,name,cb,after){
