@@ -80,7 +80,7 @@ FlyVK.settings.window_obj.splice(FlyVK.settings.window_obj_scripts_index, 0, {t:
 	.crypto_type_MP3 ._im_chat_input_parent:before,
 	.crypto_type_COFFEE ._im_chat_input_parent:before,
 	.crypto_type_COFFEE ._im_chat_input_parent:before {
-		content: url(https://k-94.ru/FlyVK/styles/ico_lock.png);
+		content: url(https://raw.githubusercontent.com/xor2003/flyvk/master/styles/ico_lock.png);
 		right: 15px;
 		position: absolute;
 	}
@@ -173,11 +173,11 @@ data.COFFEE = {
 		}else{
 			key = data.COFFEE.key;
 		}
-		return "VK CO FF EE "+CryptoJS.AES.encrypt(CryptoJS.enc.Utf8.parse(decrypted),CryptoJS.enc.Utf8.parse(key), {
+		return "PP "+CryptoJS.AES.encrypt(CryptoJS.enc.Utf8.parse(decrypted),CryptoJS.enc.Utf8.parse(key), {
 				  mode : CryptoJS.mode.ECB,
 				  padding : CryptoJS.pad.Pkcs7,
 				  keySize:128/32
-			 }).toString().hexEncode().toUpperCase()+"VK CO FF EE";
+			 }).toString().hexEncode().toUpperCase()+"PP";
 	}
 };
 
