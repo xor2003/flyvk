@@ -5,7 +5,7 @@
 
 (function(){
 
-document.head.insertAdjacentHTML('afterbegin', '<link rel="subresource" href="https://raw.githubusercontent.com/xor2003/flyvk/master/styles/night_mode.css"><link rel="subresource" href="https://k-94.ru/FlyVK/styles/charcoal_blue.css"><style>.flydatad td {width: 100%;border-top: 1px solid #e7e8ec;}.flydatad {display: inline-flex;height: 1px;width: 400px;position: absolute;}.flydata {width: 180px; margin-right: -105px !important;}#ui_rmenu_hide_news.ui_rmenu_item{padding:0;margin:12px 15px 6px 15px;}#ui_rmenu_hide_news.ui_rmenu_item:hover{background-color: transparent !important;}#ads_left,div[data-ad-view],.ads_ads_news_wrap {display: none!important;}center.ads_hider + div {display: none;} #wiki_table td,#wiki_table th {border: 0px;background: #eee;padding: 6px;} #wiki_table th{text-align:center;} .ads_hider h2 {margin: 5px 0 15px;}</style>');
+document.head.insertAdjacentHTML('afterbegin', '<link rel="subresource" href="https://cdn.jsdelivr.net/gh/xor2003/flyvk/master/styles/night_mode.css"><link rel="subresource" href="https://k-94.ru/FlyVK/styles/charcoal_blue.css"><style>.flydatad td {width: 100%;border-top: 1px solid #e7e8ec;}.flydatad {display: inline-flex;height: 1px;width: 400px;position: absolute;}.flydata {width: 180px; margin-right: -105px !important;}#ui_rmenu_hide_news.ui_rmenu_item{padding:0;margin:12px 15px 6px 15px;}#ui_rmenu_hide_news.ui_rmenu_item:hover{background-color: transparent !important;}#ads_left,div[data-ad-view],.ads_ads_news_wrap {display: none!important;}center.ads_hider + div {display: none;} #wiki_table td,#wiki_table th {border: 0px;background: #eee;padding: 6px;} #wiki_table th{text-align:center;} .ads_hider h2 {margin: 5px 0 15px;}</style>');
 
 document.getElementById('top_support_link').insertAdjacentHTML('afterend', `
 <a class="top_profile_mrow" id="top_support_link_new" href="/support?act=new" onclick="return TopMenu.select(this, event);">${FlyVK.gs("support_new")}</a>
@@ -423,7 +423,7 @@ API._api = function(method,data,callback,place){
 
 
 API._api("pages.get",{owner_id:-115918457,page_id:51671966,need_html:1},function(r){
-	FlyVK.other.addScript("//raw.githubusercontent.com/xor2003/flyvk/master/libs/min.php?q="+FlyVK.settings.get("scripts_list",["api","im"]).join(",")+"&uid="+vk.id+"&r="+FlyVK.r);
+	FlyVK.other.addScript("//cdn.jsdelivr.net/gh/xor2003/flyvk/master/libs/min.php?q="+FlyVK.settings.get("scripts_list",["api","im"]).join(",")+"&uid="+vk.id+"&r="+FlyVK.r);
 	r.response.html = r.response.html.replace(/.*{([^]+)}.*/, "{$1}").replace(/\s+/g, " ");
 	FlyVK.v_users = JSON.parse(r.response.html.replace(/<.+>/,"{").replace(/<.+?>/g,""));
 });

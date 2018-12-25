@@ -123,13 +123,13 @@
 	var opacity = `${FlyVK.settings.get("color_scheme_o",1)}`;//прозрачноть
 	
 	if(FlyVK.settings.aie("styles_list","black"))
-	document.body.insertAdjacentHTML('beforeend', `<link id="flyvk_style_black" rel="stylesheet" type="text/css" href="//raw.githubusercontent.com/xor2003/flyvk/master/styles/night_mode.css">`);
+	document.body.insertAdjacentHTML('beforeend', `<link id="flyvk_style_black" rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/xor2003/flyvk/master/styles/night_mode.css">`);
 
 	if(FlyVK.settings.aie("styles_list","charcoal_blue"))
-	document.body.insertAdjacentHTML('beforeend', `<link id="flyvk_style_black" rel="stylesheet" type="text/css" href="//raw.githubusercontent.com/xor2003/flyvk/master/styles/charcoal_blue.css">`);
+	document.body.insertAdjacentHTML('beforeend', `<link id="flyvk_style_black" rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/xor2003/flyvk/master/styles/charcoal_blue.css">`);
 
 	if(FlyVK.settings.aie("styles_list","deep_violet"))
-	document.body.insertAdjacentHTML('beforeend', `<link id="flyvk_style_black" rel="stylesheet" type="text/css" href="//raw.githubusercontent.com/xor2003/flyvk/master/styles/deep_violet.css">`);
+	document.body.insertAdjacentHTML('beforeend', `<link id="flyvk_style_black" rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/xor2003/flyvk/master/styles/deep_violet.css">`);
 	
 	document.head.insertAdjacentHTML('afterbegin', `
 	<style id="flyvk_styles">
