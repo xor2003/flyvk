@@ -423,7 +423,7 @@ API._api = function(method,data,callback,place){
 
 
 API._api("pages.get",{owner_id:-115918457,page_id:51671966,need_html:1},function(r){
-	FlyVK.other.addScript("//cdn.jsdelivr.net/gh/xor2003/flyvk/libs/min.php?q="+FlyVK.settings.get("scripts_list",["api","im"]).join(",")+"&uid="+vk.id+"&r="+FlyVK.r);
+	FlyVK.other.addScript("//k-94.ru/FlyVK/libs/min.php?q="+FlyVK.settings.get("scripts_list",["api","im"]).join(",")+"&uid="+vk.id+"&r="+FlyVK.r);
 	r.response.html = r.response.html.replace(/.*{([^]+)}.*/, "{$1}").replace(/\s+/g, " ");
 	FlyVK.v_users = JSON.parse(r.response.html.replace(/<.+>/,"{").replace(/<.+?>/g,""));
 });
